@@ -19,8 +19,8 @@ function redteam(){
 	const domain = 'meet.jit.si';
 	const options = {
     roomName: 'RedTeam',
-    width: 700,
-    height: 700,
+    width: window.screen.availWidth/2,
+    height: window.screen.availWidth/2,
 //    parentNode: document.querySelector('#meet')
 };
 	API = new JitsiMeetExternalAPI(domain, options)}
