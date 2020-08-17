@@ -7,8 +7,8 @@ function trivmaster(){
 	const domain = 'meet.jit.si';
 	const options = {
     roomName: 'trivmaster',
-    width: window.screen.width/2,
-    height: window.screen.width/2,
+    width: window.screen.availWidth/2,
+    height: window.screen.availWidth/2,
 //    parentNode: document.querySelector('#meet')
 };
 	API = new JitsiMeetExternalAPI(domain, options)}
