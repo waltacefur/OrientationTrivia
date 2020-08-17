@@ -7,8 +7,8 @@ function trivmaster(){
 	const domain = 'meet.jit.si';
 	const options = {
     roomName: 'trivmaster',
-    width: 400,
-    height: 400,
+    width: window.screen.availWidth-50,
+    height: window.screen.availWidth-50,
 //    parentNode: document.querySelector('#meet')
 };
 	API = new JitsiMeetExternalAPI(domain, options)}
@@ -19,8 +19,8 @@ function redteam(){
 	const domain = 'meet.jit.si';
 	const options = {
     roomName: 'RedTeam',
-    width: 400,
-    height: 400,
+    width: window.screen.availWidth-50,
+    height: window.screen.availWidth-50,
 //    parentNode: document.querySelector('#meet')
 };
 	API = new JitsiMeetExternalAPI(domain, options)}
