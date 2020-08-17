@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html data-init="no-js">
 <head>
-//This code is injected into the twine story before it is sent to the browser.
-//Supports client identification and twine event interfacing.
+<script>
 function makeid(length) {
    var result           = '';
    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -288,6 +287,7 @@ function process_passage_comments(text){
 		return default_passage_settings
 	}
 }
+	</script>
 <meta charset="UTF-8" />
 <title>Trivia</title>
 <meta name="viewport" content="width=device-width,initial-scale=1" />
