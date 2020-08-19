@@ -3,6 +3,8 @@
 <head>
 <script src='https://meet.jit.si/external_api.js'></script>
 <script>
+//This code is injected into the twine story before it is sent to the browser.
+//Supports client identification and twine event interfacing.
 function makeid(length) {
    var result           = '';
    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -287,44 +289,7 @@ function process_passage_comments(text){
 	}else{
 		return default_passage_settings
 	}
-}};
-	API = new JitsiMeetExternalAPI(domain, options)}
-function greenteam(){
-	const domain = 'meet.jit.si';
-	const options = {
-    roomName: 'GreenTeam',
-    width: window.screen.availWidth/2-50,
-    height: window.screen.availWidth/2-50,
-//    parentNode: document.querySelector('#meet')
-};
-	API = new JitsiMeetExternalAPI(domain, options)}
-function blueteam(){
-	const domain = 'meet.jit.si';
-	const options = {
-    roomName: 'BlueTeam',
-    width: window.screen.availWidth/2-50,
-    height: window.screen.availWidth/2-50,
-//    parentNode: document.querySelector('#meet')
-};
-	API = new JitsiMeetExternalAPI(domain, options)}
-function indigoteam(){
-	const domain = 'meet.jit.si';
-	const options = {
-    roomName: 'IndigoTeam',
-    width: window.screen.availWidth/2-50,
-    height: window.screen.availWidth/2-50,
-//    parentNode: document.querySelector('#meet')
-};
-	API = new JitsiMeetExternalAPI(domain, options)}
-function violetteam(){
-	const domain = 'meet.jit.si';
-	const options = {
-    roomName: 'VioletTeam',
-    width: window.screen.availWidth/2-50,
-    height: window.screen.availWidth/2-50,
-//    parentNode: document.querySelector('#meet')
-};
-	API = new JitsiMeetExternalAPI(domain, options)}
+}
 	</script>
 <meta charset="UTF-8" />
 <title>Trivia</title>
