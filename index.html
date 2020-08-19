@@ -145,6 +145,17 @@ function update_other_clients(){
 	$(".other_clients")[0].innerHTML = client_boxes.join("")
 }
 
+function process_passage_comments(text){
+	var comment_re = /\/\*([^*]+)\*\//
+	var parsed = comment_re.exec(text)
+	if(parsed != null){
+		console.log(parsed[1])
+		return JSON5.parse(parsed[1])
+	}else{
+		return default_passage_settings
+	}
+}	
+	
 //setup loom ui. Called once per document
 function setup_loom_ui(){
 	var loom_ui = `
@@ -196,6 +207,8 @@ function setup_loom_ui(){
 	color_picker.on("input:end", function(color){
 		update_color(color.hexString)
 	})
+	
+	
 	
 	var passage = SugarCube.Story.get(SugarCube.State.passage).text
 	loom.current_passage_settings = process_passage_comments(passage)
@@ -278,17 +291,6 @@ function setup_jitsi(){
 			}
 		}
 	)
-}
-
-function process_passage_comments(text){
-	var comment_re = /\/\*([^*]+)\*\//
-	var parsed = comment_re.exec(text)
-	if(parsed != null){
-		console.log(parsed[1])
-		return JSON5.parse(parsed[1])
-	}else{
-		return default_passage_settings
-	}
 }
 	</script>
 <meta charset="UTF-8" />
