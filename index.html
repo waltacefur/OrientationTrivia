@@ -9,6 +9,7 @@ function trivmaster(){
     roomName: 'TrivMaster',
     width: window.screen.availWidth/2-50,
     height: window.screen.availWidth/2-50,
+    configOverwrite: { startWithAudioMuted: true },
 //    parentNode: document.querySelector('#meet')
 };
 	API = new JitsiMeetExternalAPI(domain, options)}
