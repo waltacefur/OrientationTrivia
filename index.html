@@ -10,13 +10,6 @@ function trivmaster(){
     width: window.screen.availWidth/2-50,
     height: window.screen.availWidth/2-50,
     configOverwrite: { startWithAudioMuted: true, startWithVideoMuted: true },
-    interfaceConfigOverwrite:{
-				SHOW_JITSI_WATERMARK: false,
-				SHOW_WATERMARK_FOR_GUESTS:false,
-				DEFAULT_REMOTE_DISPLAY_NAME: "Trivia Stud",
-				DISPLAY_WELCOME_CONTENT:false,
-				DISPLAY_WELCOME_PAGE_TOOLBAR_ADDITIONAL_CONTENT:false,
-    }
 //    parentNode: document.querySelector('#meet')
 };
 	APIT = new JitsiMeetExternalAPI(domain, options)}
