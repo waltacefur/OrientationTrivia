@@ -237,8 +237,12 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 
 body {
 	margin-left: 3.5em;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Lobby" tags="" position="700,300" size="100,100">&lt;section&gt;
-&lt;&lt;if $tm is 1&gt;&gt;
+}
+
+div.jit {
+  position: absolute;
+  top: 0;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Lobby" tags="" position="700,300" size="100,100">&lt;&lt;if $tm is 1&gt;&gt;
 &lt;script&gt;
 teardownT()
 &lt;/script&gt;
@@ -304,12 +308,12 @@ teardownV()
 &lt;/script&gt;
 &lt;&lt;set $violet to 0&gt;&gt;
 &lt;&lt;/if&gt;&gt;
+&lt;div class=&#39;jit&#39;&gt;
 &lt;script&gt;
 lobby()
 &lt;/script&gt;
+&lt;/div&gt;
 &lt;&lt;set $lob to 1&gt;&gt;
-&lt;/section&gt;
-&lt;section&gt;
 Welcome to trivia!
 
 This is the trivia lobby. Please look at the following table to find your team. Then select from the options below. If you are confused, scroll down to the video chat at the bottom of the screen and ask Ace.
